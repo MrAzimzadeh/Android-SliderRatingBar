@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".AndroidWifgetsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/buttonBasla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:text="Basla "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/buttonDur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dur "
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBasla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/buttonBasla"
+        app:layout_constraintTop_toTopOf="@+id/buttonBasla" />
+
+    <TextView
+        android:id="@+id/TVSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="329dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="56dp"
+        android:progress="30"
+        app:layout_constraintEnd_toEndOf="@+id/TVSonuc"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/TVSonuc"
+        app:layout_constraintTop_toBottomOf="@+id/TVSonuc" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:indeterminateOnly="false"
+        android:indeterminateTint="#600C0C"
+
+
+        android:numStars="6"
+        android:rating="3"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_constraintEnd_toEndOf="@+id/slider"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/slider"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+    <Button
+        android:id="@+id/BtnGonder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Goster"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
